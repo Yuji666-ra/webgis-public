@@ -27,3 +27,7 @@ Route::get('/peta-cluster', [PetaClusterController::class, 'index'])
 
 Route::get('/statistik', [StatistikController::class, 'index'])
     ->name('statistik');
+
+    Route::get('/healthz', function() {
+    return response()->json(['status' => 'ok']);
+});
