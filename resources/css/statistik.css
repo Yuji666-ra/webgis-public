@@ -1,0 +1,105 @@
+/* =============================
+   KPI CARDS
+============================= */
+.kpi-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.kpi-card {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.kpi-card h5 {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.kpi-card p {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.kpi-color {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+
+/* =============================
+   CHARTS
+============================= */
+.charts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 40px;
+}
+
+.chart-container {
+    flex: 0 0 48%;
+    max-width: 48%;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    height: 450px;
+    overflow: hidden;
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media (max-width: 992px) {
+    .chart-container {
+        flex: 0 0 90%;
+        max-width: 90%;
+        height: 400px;
+    }
+}
+
+
+/* =============================
+   PAGE TITLE — SELARAS DENGAN PETA-CLUSTER
+============================= */
+.map-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #062347;
+    margin: 20px auto 26px !important;  /* diberi margin-top agar tidak mepet navbar */
+    padding: 15px 0;
+    max-width: 700px;
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 576px) {
+    .map-title {
+        font-size: 1.4rem;
+        padding: 12px 0;
+        max-width: 90%;
+        margin-top: 16px !important;
+    }
+}
+
+
+/* =============================
+   PAGE OFFSET PERBAIKAN
+============================= */
+.page-statistik {
+    padding-top: 60px !important;  /* offset aman agar tidak tertutup navbar */
+}

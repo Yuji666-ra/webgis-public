@@ -1,0 +1,51 @@
+.about-section {
+    background-color: #f8f9fa;
+    color: #333;
+    padding-top: 60px;
+    padding-bottom: 60px; /* tambah sedikit biar konten lega */
+    min-height: calc(100vh - 160px); /* tinggi dinamis sesuai navbar + footer */
+}
+
+/* PAGE TITLE */
+.title {
+    color: #1a1a1a;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitle {
+    color: #6c757d;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* DESCRIPTION */
+.description {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+/* CARDS */
+.about-card {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Fix footer naik di HALAMAN ABOUT */
+.about-section {
+    margin-bottom: 0 !important;
+}
+
+.footer-section {
+    position: static !important;
+    margin-top: 0 !important;
+}

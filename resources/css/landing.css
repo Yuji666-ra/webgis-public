@@ -1,0 +1,237 @@
+/* ============================================================
+   LANDING PAGE — CORPORATE POLISHED VERSION (SAFE & ISOLATED)
+   Semua styling dibatasi menggunakan prefix .landing-*
+   ============================================================ */
+
+/* Reset ringan khusus landing */
+.landing-page * {
+    box-sizing: border-box;
+}
+
+/* ============================================================
+   HERO SECTION (Landing Hero)
+   ============================================================ */
+.landing-hero {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(135deg, rgba(0,30,60,0.65), rgba(0,70,130,0.65)),
+    url('../images/peta-tematik1.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.landing-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 20, 50, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+.landing-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+.landing-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+.landing-hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-top: 12px;
+}
+
+.landing-hero .btn-hero {
+    background-color: #007bff;
+    border-radius: 10px;
+    padding: 12px 32px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.landing-hero .btn-hero:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+    .landing-hero h1 {
+        font-size: 2.2rem;
+    }
+    .landing-hero p {
+        font-size: 1rem;
+    }
+}
+
+
+/* ============================================================
+   FEATURES SECTION
+   ============================================================ */
+.landing-features {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.landing-features h2 {
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.landing-features p.section-desc {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    color: #555;
+}
+
+.landing-feature-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    transition: 0.3s ease;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.landing-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.12);
+}
+
+
+/* ============================================================
+   ABOUT SECTION
+   ============================================================ */
+.landing-about {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.landing-about h2 {
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.landing-about p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* ============================================================
+   EMERGENCY CONTACT SECTION
+   ============================================================ */
+.landing-emergency {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.landing-emergency h2 {
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.landing-emergency p.section-desc {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    color: #555;
+}
+
+/* Card instansi */
+.landing-em-card {
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    transition: 0.3s ease;
+    padding: 28px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.landing-em-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.15);
+}
+
+/* Logo instansi */
+.landing-em-card img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.landing-em-card h5 {
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.landing-em-card p {
+    margin: 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+
+/* ============================================================
+   SPACE FIX (Agar footer tidak ada gap besar)
+   ============================================================ */
+.landing-page section {
+    margin-bottom: 0 !important;
+    padding-bottom: 70px;
+}
+
+.landing-emergency {
+    padding-bottom: 60px;
+}
+
+/* Hilangkan margin bawah berlebihan pada section */
+.section,
+.features-section,
+.contact-list,
+.content-wrapper {
+    margin-bottom: 0 !important;
+    padding-bottom: 40px !important; /* biar tetap bernafas */
+}
+
+/* Hilangkan gap putih antara konten & footer */
+main.content-offset {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Perbaiki container agar tidak punya spacing default */
+.container {
+    margin-bottom: 0 !important;
+}
+
+/* Matikan min-height default layout untuk halaman landing */
+main.content-offset {
+    min-height: auto !important;
+}
+
+/* Hapus jarak default di bawah navbar (khusus landing page) */
+.landing-page {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+main, main.content-offset {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
