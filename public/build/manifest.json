@@ -1,0 +1,23 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-BiclJkUP.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/images/peta-tematik1.png": {
+    "file": "assets/peta-tematik1-DtwK4jgG.png",
+    "src": "resources/images/peta-tematik1.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CznlbVBb.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-D2NY7zQG.css"
+    ],
+    "assets": [
+      "assets/peta-tematik1-DtwK4jgG.png"
+    ]
+  }
+}
