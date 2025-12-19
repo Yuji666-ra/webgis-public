@@ -1,16 +1,14 @@
-# Base image PHP 8.2 + Apache
 FROM php:8.2-apache
 
-# Install PHP extensions dan tools dasar
+# Install PHP extensions & tools
 RUN apt-get update && apt-get install -y \
     libzip-dev unzip git curl zip \
     && docker-php-ext-install pdo_mysql zip \
     && a2enmod rewrite
 
-# Set working directory
 WORKDIR /var/www/html
 
-# Copy source code + frontend build
+# Copy semua source code termasuk public/build
 COPY . /var/www/html
 
 # Set permissions storage & cache
@@ -23,5 +21,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Start Apache
 CMD ["apache2-foreground"]
